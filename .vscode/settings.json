@@ -44,5 +44,6 @@
         "trainingorganizationlist",
         "viewpager"
     ],
-    "java.configuration.updateBuildConfiguration": "disabled"
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "window.title": "${activeEditorShort}${separator}${rootName} ${separator} [Branch: ARGH-AndroidX-Migration]"
 }
