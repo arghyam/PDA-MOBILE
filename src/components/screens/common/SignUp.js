@@ -131,13 +131,13 @@ onSignUpPress(){
   }
   let countryCode = '';
   let phoneNumberLength = '';
-  let phoneNumberSizeMin = '';
-  let phoneNumberSizeMax = '';
+  let phoneNumberSizeMin = 10;
+  let phoneNumberSizeMax = 10;
   if (countryCodeWithCountryList.length !== 0) {
     countryCode = countryCodeWithCountryList[this.state.countryCodeSelectIndex].code;
     phoneNumberLength = countryCodeWithCountryList[this.state.countryCodeSelectIndex].phoneNumberLength;
-    phoneNumberSizeMin = countryCodeWithCountryList[this.state.countryCodeSelectIndex].phoneNumberSizeMin;
-    phoneNumberSizeMax = countryCodeWithCountryList[this.state.countryCodeSelectIndex].phoneNumberSizeMax;
+    //phoneNumberSizeMin = countryCodeWithCountryList[this.state.countryCodeSelectIndex].phoneNumberSizeMin;
+    //phoneNumberSizeMax = countryCodeWithCountryList[this.state.countryCodeSelectIndex].phoneNumberSizeMax;
   }
   if (phone.length === 0) {
     this.setState({phoneError: stringsConvertor('validationMessage.phoneNumberProvide')
