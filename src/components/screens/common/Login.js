@@ -109,6 +109,7 @@ class Login extends Component {
     if (countryCodeWithCountryList.length !== 0) {
       countryCode = countryCodeWithCountryList[this.state.countryCodeSelectIndex].code;
       phoneNumberLength = countryCodeWithCountryList[this.state.countryCodeSelectIndex].phoneNumberLength;
+      /*Commenting these as these fields are not available in the backend*/
       //phoneNumberSizeMin = countryCodeWithCountryList[this.state.countryCodeSelectIndex].phoneNumberSizeMin;
       //phoneNumberSizeMax = countryCodeWithCountryList[this.state.countryCodeSelectIndex].phoneNumberSizeMax;
     }
